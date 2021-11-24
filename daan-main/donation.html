@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+
+    <!-- footer-->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+
+    <title>Hello, world!</title>
+
+    <style>
+        body {
+            font-family: "Lato", sans-serif
+        }
+
+        .mySlides {
+            display: none
+        }
+        .row{
+  display: flex;
+  padding: 20px;
+  margin-top: 30px;
+}
+p{
+  font-size: 20px;
+  word-wrap: break-word;
+}
+.col-6{
+	width: 50%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.parent{
+	height: 100%;
+	display: -webkit-flex;
+  display: -ms-flexbox;
+
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.mobile-visible{
+  display: none;
+}
+
+@media only screen and (min-width: 200px) and (max-width: 767px) { 
+  .row{
+    flex-direction: column;
+    margin-top: 0px;
+  }
+  .col-6{
+    min-width: 100%
+  }
+  .visible{
+  display: none;
+  }
+  .mobile-visible{
+    display: block;
+  }
+  p{
+    font-size: 16px;
+  }
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  max-width: 500px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container {
+  border-radius: 5px;
+  /* background-color: hsla(120, 87%, 56%, 0.171); */
+  padding: 20px;
+}
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <input id="nav-toggle" type="checkbox">
+        <div class="logo">
+            <strong>Daan Foundation</strong>
+        </div>
+        <ul class="links">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About Us</a></li>
+            <li><a href="./team.html">Team</a></li>
+            <li><a href="#">Donation</a></li>
+            <li><a href="./contact.html">Contact Us</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+
+    <div class="sub-nav" style="background-image: url(./assets/img/green2.png); ">
+        <h2>Donation</h2>
+    </div>
+
+    <div class="about" >
+        <div class="row">
+    
+            <div class="col-6">
+                <div class="parent">
+                    <h1>
+                        Fund Donation
+                    </h1>
+                </div>
+            </div>
+            <div class="col-6">
+                <p>
+                    Funding is the process of raising donations from people across the country to fund your chosen serve as- food donation, Educational cause,Medication. 
+                    within a short period of time. Unlike loans or insurance, crowdfunding requires no payback and is for everyone from a 5 month old baby to a senior citizen with critical illness.
+                    The efforts of one person can't move mountains. It's the strength of us all working together that makes a change.
+                    <br> <br>
+                    To donate money click below <br>
+                    <form>
+                        <script src="https://checkout.razorpay.com/v1/payment-button.js" data-payment_button_id="pl_IKMf9t0jvkptlF"
+                            async> </script>
+                    </form>
+                </p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="about">
+        <div class="row">
+            <div class="col-6 mobile-visible">
+                <div class="parent">
+                    <h1>
+                        Material Donation
+                    </h1>
+                </div>
+            </div>
+            <div class="col-6 ">
+                <p>
+                    As much as 70% of materials trucked to municipal landfills come from society By diverting this old clothes and wearing accesories and educational books,
+                    We want serve that to people who can use it in education, art, and recreation and also help enrich education and the arts.
+                    We collect clean, safe, reusable accecories discards as well as new. Helping others as from the Society to the society.
+                    <br> <br>
+                    To donate materials click below <br>
+                </p>
+                <!-- Trigger/Open The Modal -->
+                <button id="myBtn" style="background-color: green;">Donate Now</button>
+                
+                
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <div class="container">
+                            <form id="add-donation-form">
+                                <label for="fname">Full Name</label>
+                                <input type="text" id="fname" name="name" placeholder="Your name..">
+                
+                                <label for="email">Email</label>
+                                <input type="text" id="email" name="email" placeholder="Your email id..">
+
+                                <label for="date">Date</label>
+                                <input type="date" id="date" name="date">
+                                <!-- <input type="text" id="lname" name="lastname" placeholder="Your email id.."> -->
+                                <br>
+                                <label for="Address">Address</label>
+                                <textarea id="address" name="address" placeholder="Write Your Address.."
+                                    style="height:200px"></textarea>
+                
+                                <!-- <input type="submit" value="Submit"> -->
+                                <button class="btn btn-block" type="submit" onclick="myDonation()">Send Now!</button>
+                            </form>
+                        </div>
+                
+                    </div>
+                
+                </div>
+
+            </div>
+            <div class="col-6 visible">
+                <div class="parent">
+                    <h1>
+                        Material Donation
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section class="contact-area" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="contact-content text-center">
+                        <a href="#" style="text-decoration: none; color: green;">
+                            <h3>Daan Foundation</h3>
+                        </a>
+                        <p>We are always there to serve.<br>
+                            For Enquiry are as follows: </p>
+                        <div class="hr"></div>
+                        <h6>Chandigarh University,140901, Chandigarh.</h6>
+                        <h6>(+91)-78961 86228<span>|</span>(+91)-97177 10377</h6>
+                        <div class="contact-social">
+                            <ul>
+                                <li><a class="hover-target" href=""><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a class="hover-target" href=""><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a class="hover-target" href=""><i class="fab fa-github"></i></a></li>
+                                <li><a class="hover-target" href=""><i class="fab fa-behance"></i></a></li>
+                                <li><a class="hover-target" href=""><i class="fab fa-pinterest-p"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- =============== 1.9 Contact Area End ====================-->
+    <!-- =============== 1.9 Footer Area Start ====================-->
+    <footer>
+        <p>Copyright &copy; 2021 All Rights Reserved.</p>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+
+
+    <script>
+        var modal = document.getElementById("myModal");
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btn.onclick = function () {
+                modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function () {
+                modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+    </script>
+
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyDk8n2YP1ylDaJluTjugU-oRxKtWF5f90A",
+            authDomain: "daan-3edc0.firebaseapp.com",
+            projectId: "daan-3edc0",
+            storageBucket: "daan-3edc0.appspot.com",
+            messagingSenderId: "437178869772",
+            appId: "1:437178869772:web:f93ab3441a6381f1a36629",
+            measurementId: "G-0VDRMK1244"
+        };
+        firebase.initializeApp(config);
+        const db = firebase.firestore();
+        db.settings({ timestampsInSnapshots: true });
+    </script>
+    
+    <script src="./assets/js/donation.js"></script>
+
+</body>
+
+</html>
